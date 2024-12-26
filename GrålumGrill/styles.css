@@ -1,0 +1,306 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-content .logo img {
+  max-height: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcccb;
+}
+
+#hero {
+  background: url("grålump.jpg") no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.hero-content h1 {
+  margin: 0 0 1rem;
+}
+
+.hero-content p {
+  margin: 0 0 1.5rem;
+}
+
+.hero-button {
+  background-color: #d32f2f;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #ffcccb;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.menu-paper {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.menu-paper .menu-category {
+  margin-bottom: 2rem;
+}
+
+.menu-paper .menu-category h3 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 0.5rem;
+}
+
+.menu-paper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-paper li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.menu-item {
+  font-weight: bold;
+  display: block;
+}
+
+.menu-paper li p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+h2 {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Om oss styles */
+#om-oss {
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#om-oss h2 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #d32f2f;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+#om-oss p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Kontakt oss styles */
+#kontakt {
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#kontakt h2 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #d32f2f;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+#kontakt p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0.5rem auto;
+}
+
+#kontakt .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#kontakt .contact-info p {
+  margin: 0;
+}
+
+#kontakt .map-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#kontakt iframe {
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+  background: #d32f2f;
+  color: white;
+  padding: 1rem 0; /* Reduced padding */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1700px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-content .logo img {
+  max-height: 120px;
+  margin-bottom: 1rem;
+}
+
+.footer-content .center {
+  text-align: center;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.footer-content .center p {
+  margin: 0.3rem 0;
+}
+
+.footer-content .åpningstid {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.footer-content .åpningstid h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footer-content .åpningstid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content .åpningstid li {
+  margin: 0.2rem 0;
+}
+
+.footer-content .åpningstid li span {
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  width: 100%;
+  text-align: center;
+}
